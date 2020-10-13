@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>謎 印度概念店</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- ----swiper----- -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100vh;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: white;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .my-5,
+        .my-3,
+        .card {
+            border: none;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .section1,
+        .section2,
+        .section3,
+        .section4,
+        .section5 {
+
+            position: relative;
+        }
+
+        .section4 {
+            width: 100%;
+
+
+        }
+
+        #sec01 {
+            position: absolute;
+            top: -25px;
+            left: 0;
+        }
+
+        #sec02 {
+            position: absolute;
+            top: 30px;
+            left: 0;
+        }
+
+        #sec03 {
+            position: absolute;
+            top: -10px;
+            left: 0;
+        }
+
+        #sec04,
+        #sec05 {
+            position: absolute;
+            top: -20px;
+            left: 0;
+        }
+
+        .logo {
+            padding-top: 40px;
+            padding-left: 300px;
+            text-align: center;
+            float: left;
+        }
+
+        .banner {
+            position: relative;
+            width: 70%;
+            height: 50%;
+            margin: auto;
+
+        }
+
+        .nature {
+            width: 90%;
+            height: 60%;
+            padding-left: 200px;
+        }
+
+        .nav {
+            position: relative;
+            padding-top: 250px;
+            padding-right: 400px;
+            text-align: center;
+        }
+
+        .nav-1 {
+            font-weight: 400;
+            font-size: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: teal;
+        }
+
+        .nav-2 {
+            font-weight: 400;
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: teal;
+        }
+
+        .btn-groups {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .btn-group {
+            width: 80%;
+            height: 80px;
+            margin: 40px;
+            padding-top: 10px;
+            padding-left: 500px;
+            text-align: end;
+        }
+
+        .btn {
+            font-family: Playfair Display, Georgia, Times New Roman;
+            color: darksalmon;
+            font-size: medium;
+            line-height: 30px;
+            font-weight: 400;
+        }
+
+        .btn:hover {
+            color: lightseagreen;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .container {
+            width: 100%;
+            position: relative;
+
+        }
+
+        .concept {
+            width: 30%;
+            height: 80px;
+            font-weight: 200;
+            font-size: 20px;
+            color: lightseagreen;
+            padding-top: 80px;
+            padding-left: 250px;
+
+        }
+
+        .concept-text {
+            text-align: center;
+            font-weight: 200;
+            font-size: 30px;
+        }
+
+        .concept-1-L {
+            width: 60%;
+            padding-left: 260px;
+            margin: auto;
+            color: lightsalmon;
+            text-align: left;
+            line-height: 100px;
+            letter-spacing: 5px;
+        }
+
+        .concept-1-R-img {
+            width: 100%;
+            position: absolute;
+            padding-left: -100px;
+        }
+
+
+        .pro-space {
+            width: 100%;
+            height: 50px;
+        }
+
+        .prouduct {
+            width: 100%;
+            text-align: center;
+            font-weight: 400;
+            font-size: 20px;
+            color: lightseagreen;
+            padding-top: 50px;
+        }
+
+        .swiper-container {
+            width: 100%;
+            padding-top: 5px;
+
+        }
+
+        .intro-text {
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            padding: 30px;
+            background-color: lightseagreen;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+            color: lightseagreen;
+        }
+
+
+        .news {
+            width: 100%;
+            text-align: center;
+            font-weight: 400;
+            font-size: 20px;
+            color: lightseagreen;
+            padding-top: 50px;
+            padding-bottom: 50px;
+
+        }
+
+        .bg-image {
+            /* The image used */
+            background-image: url("./View/IMG_3970.JPG");
+
+            /* Add the blur effect */
+            filter: blur(1px);
+            -webkit-filter: blur(1px);
+
+            /* Full height */
+            height: 600px;
+            width: 60%;
+            /* padding-left: 200px;
+            padding-top: 50px; */
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .bg-intro {
+            width: 30%;
+            text-align: left;
+            color: darksalmon;
+            padding-top: 100px;
+            padding-left: 30px;
+            font-size: 20px;
+            font-weight: 300;
+
+        }
+
+        /* Position text in the middle of the page/image */
+        .bg-text {
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Black w/opacity/see-through */
+            color: white;
+            font-weight: bold;
+            border: 5px solid lightseagreen;
+            border-radius: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-20%, 50%);
+            z-index: 2;
+            width: 50%;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .pic {
+            width: 100%;
+            padding-left: 800px;
+
+        }
+
+
+        .mask {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.5);
+            box-sizing: border-box;
+            position: relative;
+        }
+
+
+
+        .text-area-white {
+            width: 100%;
+            background-color: #fff;
+            padding: 30px 100px;
+            box-sizing: border-box;
+            color: white;
+
+        }
+
+        .text-box {
+            height: 100px;
+            background-color: olive;
+            font-size: 45px;
+            text-align: center;
+            line-height: 100px;
+            font-weight: 200;
+            color: white;
+            position: absolute;
+            top: 55%;
+            left: 55%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+        }
+
+        .one-third-page {
+            width: 100%;
+            height: 970px;
+            background-color: darksalmon;
+            background-image: url(./BlockPrint/IMG_3521.JPG);
+            background-size: contain;
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+        }
+
+        #bg2.text-area-white {
+            font-size: 10px;
+            text-align: center;
+            color: darksalmon;
+
+        }
+
+
+        #bg4 {
+            font-weight: 500;
+            font-size: 40px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+            background-color: #C9B93F;
+            letter-spacing: 10px;
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+
+        }
+
+        #bg5 {
+            width: 100%;
+            height: 970px;
+            background-color: white;
+            background-image: url(./BlockPrint/d1a5a107-6246-4e9a-9184-364d5e699471.jpg);
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        #bg6 {
+            width: 100%;
+            height: 970px;
+            background-color: darksalmon;
+            background-image: url(./BlockPrint/IMG_3432.JPG);
+            background-size: contain;
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        #bg7 {
+            width: 100%;
+            height: 970px;
+            background-color: darksalmon;
+            background-image: url(./BlockPrint/IMG_3443.JPG);
+            background-size: contain;
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        #bg8 {
+            width: 100%;
+            height: 970px;
+            background-color: darksalmon;
+            background-image: url(./BlockPrint/IMG_3345.jpg);
+            background-size: contain;
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .ml9 {
+            position: relative;
+            font-weight: 100;
+            font-size: 4em;
+        }
+
+        .ml9 .text-wrapper {
+            position: relative;
+            display: inline-block;
+            padding-top: 0.2em;
+            padding-right: 0.05em;
+            padding-bottom: 0.1em;
+            overflow: hidden;
+        }
+
+        .ml9 .letter {
+            transform-origin: 50% 100%;
+            display: inline-block;
+            line-height: 1em;
+            color: #C9B93F;
+            font-family: Playfair Display, Georgia, Times New Roman;
+        }
+
+        .footer {
+            width: 100%;
+            height: 580px;
+            background-color: #C9B93F;
+        }
+
+        .footer-name {
+            width: 100%;
+            height: 100px;
+            color: white;
+            text-align: center;
+            font-weight: 500;
+            padding-top: 40px;
+        }
+
+        /* bcak to top */
+        .fa-republican {
+            color: lightseagreen;
+            padding: 0 20px;
+        }
+
+        a {
+            color: darksalmon;
+            font-size: 20px;
+        }
+
+        .name-en {
+            width: 100%;
+            height: 100px;
+            color: white;
+            text-align: center;
+            font-weight: 500;
+            padding-top: 20px;
+            letter-spacing: 5px;
+        }
+
+        .place {
+            width: 50%;
+            padding-left: 200px;
+            padding-right: 50px;
+        }
+
+        .footer-place {
+            display: flex;
+
+        }
+
+        .contact-up-l {
+            width: 700px;
+            height: 200px;
+            padding-top: 30px;
+            padding-left: 50px;
+            font-size: 20px;
+            font-weight: 400;
+            color: white;
+            border-left: 2px solid white;
+        }
+
+        .fa-facebook,
+        .ig,
+        .email {
+            font-size: 50px;
+            color: lightseagreen;
+            padding-bottom: 50px;
+            padding-left: 20px;
+        }
+
+        .footer-copy {
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            color: white;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ---header--- -->
+    <header class="header">
+        <div class="logo" data-aos="zoom-in-up" data-aos-duration="3000">
+            <img width="350px" height="350px" src="./logo.jpg" alt=""></div>
+        <div class="nav btn-groups">
+            <div class="nav-1" data-aos="fade-left" data-aos-duration="3000">
+                <h1>Me & India</h1>
+                <hr class="my-4">
+            </div>
+            <div class="nav-2" data-aos="fade-up" data-aos-duration="2000">
+                <h4>謎印度概念店 </h4>
+            </div>
+        </div>
+
+        <div class="btn-group">
+            <a href="#sec01" class="btn">謎印度理念<br>CONCEPT</a>
+            <a href="#sec02" class="btn">謎商品展示<br>PRODUCTS</a>
+            <a href="#sec03" class="btn">謎生活<br>NEWS</a>
+            <a href="#sec04" class="btn">印度手工藝<br>Handicraft</a>
+            <a href="#sec05" class="btn">聯絡我們<br>CONTACT</a>
+        </div>
+
+        <hr class="my-3">
+        <h1 class="ml9">
+            <span class="text-wrapper">
+                <span class="letters">Your Journey with India starts here</span>
+            </span>
+        </h1>
+        <section class="section1">
+            <div id="sec01"></div>
+            <div class="concept">CONCEPT
+                <br> | 謎 理念 | </div>
+            </div>
+            </div>
+            <div class="banner">
+                <img class="nature" src="./06f79515-4dc3-46b8-b5c1-018f1582d116.jpeg" width="100%">
+                <img class="nature" src="./View/IMG_5415.JPG" width="100%">
+                <img class="nature" src="./Retreat/IMG_0210.JPG" width="100%">
+
+            </div>
+
+
+    </header>
+    <hr class="my-5">
+    <!-- ---header--- -->
+
+    <!-- ---container--- -->
+
+    <div class="container">
+        <hr class="my-5">
+        <hr class="my-5">
+        <div class="concept-1">
+            <div class="concept-1-R-img" data-aos="fade-down" data-aos-duration="2000">
+                <img width="400px" height="400px" src="./綠蔓png.png" alt="">
+            </div>
+            <div class="concept-1-L" data-aos="fade-right" data-aos-duration="3000">
+                <h6>
+                    <p>
+                    <h3>有意識的生活選擇</h3>
+                    <hr class="my-5">
+                    <h5>「物質」<br>
+                        已是現代人與人之間<br>
+                        不可或缺的重要連結
+                        <br>
+                        但細細一想<br>
+                        我們對商品的挑選是有意識的嗎<br>
+                        「購買 」只是需要、喜歡而已嗎 <br>
+                        或是<br>可以讓「購買」富予更深的意義
+                    </h5>
+                    </p>
+                    <hr class="my-5">
+                    <P>
+                    <h5>謎印度透過有意識的商品揀選<br>讓購買成為有意義的行為<br>
+                        使印度偏遠村落婦女獲得持續的收入<br>
+                        同時保存文化<br>
+                        讓之在其社區內獲得領導機會<br>
+                        賦予女權<br>
+                        推進性別平等。</h5>
+                    </P>
+            </div>
+        </div>
+        </section>
+
+        <hr class="my-5">
+        <div class="back">
+            <p><a href="#"><i class="fas fa-republican"></i>Back to top<i class="fas fa-republican"></i></a>
+            </p>
+        </div>
+        <div class="pro-space"> </div>
+
+        <section class="section2">
+            <div id="sec02"></div>
+            <div class="prouduct">Product
+                <br> | 謎 商品 |
+            </div>
+            <hr class="my-5">
+            <!-- 商品Swiper-1 -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(./商店招牌.JPG)"></div>
+
+                    <div class="swiper-slide">
+                        <div class="intro-text">居家棉布 –
+                            來自製棉大國之一的特選棉布，獨有的數位圖騰印刷技術，印製各色鮮艷之曼達拉設計圖樣，除了樣式特別、美觀，實用性也很高，適合做為野餐布、桌布、沙發布、海灘布、床單、牆飾、露營、團康活動用布等。
+                        </div>
+                    </div>
+                    <div class="swiper-slide"
+                        style="background-image:url(./商品/47683130_2227028353982612_5217462473736585216_o.jpg)"></div>
+                    <div class="swiper-slide"
+                        style="background-image:url(./商品/47577605_2222848651067249_7226055774261215232_o.jpg)"></div>
+
+                    <div class="swiper-slide"
+                        style="background-image:url(./商品/48430354_2258024057549708_9016581825547468800_o.jpg)"></div>
+                    <div class="swiper-slide"
+                        style="background-image:url(./商品/47680195_2227027480649366_5975417991234322432_o.jpg)"></div>
+                    <div class="swiper-slide"
+                        style="background-image:url(./商品/74455022_2827367623948679_5634321897723265024_o.jpg)"></div>
+                    <div class="swiper-slide"
+                        style="background-image:url(./商品/74503142_2827367807281994_5545365729089421312_o.jpg)"></div>
+                    <div class="swiper-slide"
+                        style="background-image:url(./商品/75336379_2827367797281995_6800668417830420480_o.jpg)"></div>
+
+                </div>
+
+        </section>
+
+        <hr class="my-5">
+
+        <section class="section2">
+            <div id="sec02"></div>
+
+            <hr class="my-5">
+            <!-- 商品Swiper-2 -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(./商品/IMG_5029\ \(1\).JPG)"></div>
+
+                    <div class="swiper-slide">
+                        <div class="intro-text">環狀耳環 – 一件式耳環，復古特別，不需耳針，可正戴亦可反戴，隨著耳針戴入的長度不同，可有不同的造型效果。
+                        </div>
+                    </div>
+                    <div class="swiper-slide"
+                        style="background-image:url(./商品/80775269_2954489927903114_2130433525483044864_o.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./商品/il_570xN.1134825605_hdwx.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./商品/805dc7688e4903f4c91233e304093fc2.jpg)">
+                    </div>
+
+
+        </section>
+        <hr class="my-5">
+        <!-- 商品Swiper-3 -->
+        <section class="section2">
+            <div id="sec02"></div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(./商品/IMG_2626.JPG)"></div>
+
+                    <div class="swiper-slide">
+                        <div class="intro-text">香氛 – 使用來自大自然的材料，用氣味療癒、沉澱人心，有塔香、線香、蠟燭等各式香氛商品，每一項氣味都有如慶典一般值得慶祝。
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(./商品/insence.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./商品/insence5.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./商品/下載.jpeg)"></div>
+                    <div class="swiper-slide" style="background-image:url(./商品/insence4.jpg)"></div>
+
+
+        </section>
+        <hr class="my-5">
+        <!-- 商品Swiper-4 -->
+        <section class="section2">
+            <div id="sec02"></div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(./商品/IMG_2625.JPG)"></div>
+
+                    <div class="swiper-slide">
+                        <div class="intro-text">純棉洋裝 – 精選棉布製做的一件式洋裝，輕薄、透氣、舒服，圖樣設計特殊，獨一無二。
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(./商品/IMG_2686.JPG)"></div>
+                    <div class="swiper-slide" style="background-image:url(./商品/IMG_2680.JPG)"></div>
+
+
+        </section>
+        <hr class="my-5">
+        <div class="back">
+            <p><a href="#"><i class="fas fa-republican"></i>Back to top<i class="fas fa-republican"></i></a>
+            </p>
+        </div>
+        <section class="section3">
+            <div id="sec03"></div>
+
+            <div class="news">NEWS
+                <br> | 謎 生活 |
+            </div>
+            <div class="bg-image"></div>
+
+            <div class="bg-text">
+                <h2>印度 謎生活</h2>
+                <h2><a href="https://www.facebook.com/mi.charityshop">
+                        <h2>Welcome to India Retreat</h2>
+                    </a></h2>
+                <p>
+                <h4>Found your deep soul</h4>
+                </p>
+            </div>
+            <div class="bg"></div>
+            <!-- <div class="bg-intro"><h1>瑜珈 </h1>
+                <br>每個人，都渴望活到最大極致。
+                <br>但是，得先全然完善內在工程，
+                <br>才有機會往最大極致前進，
+                <br>「瑜珈」是一條練習之路，
+                <br>在謎 印度，同時連結。</div> -->
+            <div class="pic" data-aos="fade-up-left" data-aos-duration="3000"><img src="./pic.jpg" width="400px"
+                    height="400px" alt="">
+            </div>
+    </div>
+    </section>
+
+
+    <hr class="my-5">
+    <hr class="my-5">
+
+    </div>
+
+    <section class="section4">
+        <div id="sec04"></div>
+        <div id="bg2" class="text-area-white">
+            <div class="back">
+                <p><a href="#"><i class="fas fa-republican"></i>Back to top<i class="fas fa-republican"></i></a>
+                </p>
+            </div>
+            <hr class="my-5">
+
+            <h1>古老印度手工藝</h1>
+
+            <hr class="my-5">
+            <h5>
+                <p>感受印度保有的傳統美麗工藝,從零到有一步步紮實手作的溫度。
+                </p>
+            </h5>
+            <hr class="my-5">
+            <img src="./logo.jpg" width="150px" height="150px
+            " alt="" data-aos="fade-up" data-aos-duration="2000">
+        </div>
+
+        <div id="bg3" class="one-third-page">
+            <div class="mask">
+                <div class="text-box" data-aos="fade-down" data-aos-duration="3000">圖騰構思
+                    <p>
+                    <h4>印度師傅運用錐子
+                        <br>手工穿鑿構圖</h4>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="bg4">
+            BLACK&nbsp;&nbsp; PRINT
+        </div>
+
+        <div id="bg5">
+            <div class="mask">
+                <div class="text-box" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="3000">人工
+                    <p>
+                    <h4>細緻雕花蓋印</h4>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="bg4">
+            BLACK&nbsp;&nbsp; PRINT
+        </div>
+
+        <div id="bg6">
+            <div class="mask">
+                <div class="text-box" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="3000">水洗
+                    <p>
+                    <h4>每塊布料洗去多餘印墨</h4>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="bg4">
+            BLACK&nbsp;&nbsp; PRINT
+        </div>
+
+        <div id="bg7">
+            <div class="mask">
+                <div class="text-box" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="3000">日曬
+                    <p>
+                    <h4>陽光
+                        <br>照射後使上色在布料中</h4>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="bg4">
+            BLACK&nbsp;&nbsp; PRINT
+        </div>
+
+        <div id="bg8">
+            <div class="mask">
+                <div class="text-box" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="3000">成品
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <hr class="my-3">
+
+    <div class="container">
+        <div class="footer">
+            <section class="section5">
+                <div id="sec05"></div>
+                <div class="footer-name">
+                    <h1>迷印度概念店</h1>
+                </div>
+                <div class="name-en">Charity Shop For India</div>
+                <div class="footer-place">
+                    <div class="place"><img src="./光復新村.png" width="200px" height="200px" alt=""></div>
+                    <div class="footer-contact">
+                        <div class="contact-up">
+                            <div class="contact-up-l">
+                                <h5>Business&nbsp; Hours &nbsp;|&nbsp;預約制</h5>
+
+                                Address &nbsp;|&nbsp; 台中市霧峰區新生路130號（光復新村）
+
+                                <hr class="my-5">
+                                <div class="contact-down">
+                                    <a href="https://www.facebook.com/mi.charityshop"><i
+                                            class="fab fa-facebook setting"></i></a>
+                                    &nbsp;&nbsp;
+                                    <a href="https://www.instagram.com/kathyandindia/?hl=zh-tw"><i
+                                            class="fab fa-instagram ig"></i></a>
+                                    &nbsp;&nbsp;&nbsp;<a href="mailto:mi.charityshop@gmail.com"><i
+                                            class="far fa-envelope email"></i>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <hr class="my-5">
+
+                <div class="footer-copy">
+                    <div class="back">
+                        <p><a href="#"><i class="fas fa-republican"></i>Back to top<i class="fas fa-republican"></i></a>
+                        </p>
+                    </div>
+                    © 2018 Charity shop for india
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- swiper的JQ -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="../package/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+        // Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml9 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({ loop: true })
+            .add({
+                targets: '.ml9 .letter',
+                scale: [0, 1],
+                duration: 1500,
+                elasticity: 600,
+                delay: (el, i) => 45 * (i + 1)
+            }).add({
+                targets: '.ml9',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+    </script>
+
+    <script>
+        window.scrollTo(0, 0);
+
+        console.log(document.documentElement.scrollTop);
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            loop: true,
+            freeMode: true,
+            loopedSlides: 7, //looped slides should be the same
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+        });
+        var galleryTop = new Swiper('.gallery-top', {
+            spaceBetween: 10,
+            loop: true,
+            loopedSlides: 7, //looped slides should be the same
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            thumbs: {
+                swiper: galleryThumbs
+            }
+        });
+    </script>
+    <script>
+        w3.slideshow(".nature", 3000);
+    </script>
+    <!-- 商品 Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+
+</body>
+
+</html>
